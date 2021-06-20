@@ -52,6 +52,8 @@ class GuestActivity : AppCompatActivity() {
                 }
                 else if (birthday.toInt() % 2 == 0){
                     Toast.makeText(this@GuestActivity, "blackberry", Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(this@GuestActivity, "Feature Phone", Toast.LENGTH_SHORT).show()
                 }
                 setResult(RESULT_CODE, Intent().putExtra(DetailActivity.EXTRA_GUEST, userItems.name))
                 finish()
