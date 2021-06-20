@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">MyTest</string>
+    <string name="masukan_nama">masukan nama..</string>
+    <string name="next">next</string>
+    <string name="nama">Nama</string>
+    <string name="tanda_titik2">:</string>
+    <string name="pilih_event">pilih event</string>
+    <string name="pilih_guest">pilih guest</string>
+    <string name="judul_event">Judul Event</string>
+    <string name="tanggal">tanggal</string>
+
+
+    <string-array name="data_event">
+        <item>Event ke 1</item>
+        <item>Event ke 2</item>
+        <item>Event ke 3</item>
+        <item>Event ke 4</item>
+    </string-array>
+
+    <string-array name="data_date">
+        <item>1 Januari 2021</item>
+        <item>10 Januari 2021</item>
+        <item>2 Februari 2021</item>
+        <item>20 Februari 2021</item>
+    </string-array>
+
+    <array name="data_photo">
+        <item>@drawable/event1</item>
+        <item>@drawable/event2</item>
+        <item>@drawable/event3</item>
+        <item>@drawable/event4</item>
+    </array>
+
+    <string-array name="data_guest_name">
+        <item>Andi</item>
+        <item>Budi</item>
+        <item>Charlie</item>
+        <item>Dede</item>
+        <item>Joko</item>
+    </string-array>
+
+    <string-array name="data_guest_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="data_birthday">
+        <item>01–01–2014</item>
+        <item>02–02–2014</item>
+        <item>03–03-2014</item>
+        <item>06–06-2014</item>
+        <item>12–02-2014</item>
+    </string-array>
+
+<!--    <string-array name="data_guest_month">-->
+<!--        <item>1</item>-->
+<!--        <item>2</item>-->
+<!--        <item>3</item>-->
+<!--        <item>6</item>-->
+<!--        <item>2</item>-->
+<!--    </string-array>-->
+
+    <array name="data_image_guest">
+        <item>@drawable/guest1</item>
+        <item>@drawable/guest2</item>
+        <item>@drawable/guest3</item>
+        <item>@drawable/guest4</item>
+        <item>@drawable/guest5</item>
+    </array>
+</resources>
