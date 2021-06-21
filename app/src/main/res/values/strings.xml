@@ -8,7 +8,14 @@
     <string name="pilih_guest">pilih guest</string>
     <string name="judul_event">Judul Event</string>
     <string name="tanggal">tanggal</string>
-
+    <string name="ispalindrom">isPalindrom</string>
+    <string name="not_palindrom">not palindrom</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="sertakan_gambar_profil_anda_n_untuk_melengkapi_profil">Sertakan gambar profil anda untuk melengkapi profil.</string>
+    <string name="selesai">Selesai</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry</string>
+    <string name="event_map">event map</string>
+    <string name="API_KEY">AIzaSyCGnO0H2HWih04lcRjI3zJGidb7lvKdvq8</string>
 
     <string-array name="data_event">
         <item>Event ke 1</item>
@@ -55,14 +62,6 @@
         <item>12–02-2014</item>
     </string-array>
 
-<!--    <string-array name="data_guest_month">-->
-<!--        <item>1</item>-->
-<!--        <item>2</item>-->
-<!--        <item>3</item>-->
-<!--        <item>6</item>-->
-<!--        <item>2</item>-->
-<!--    </string-array>-->
-
     <array name="data_image_guest">
         <item>@drawable/guest1</item>
         <item>@drawable/guest2</item>
@@ -70,4 +69,8 @@
         <item>@drawable/guest4</item>
         <item>@drawable/guest5</item>
     </array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

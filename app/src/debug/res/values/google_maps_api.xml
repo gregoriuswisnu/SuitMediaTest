@@ -1,0 +1,24 @@
+<resources>
+    <!--
+
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=F2:91:CF:8F:3B:8E:5D:BD:2E:31:B0:FD:70:EE:1C:FB:35:FB:1B:46%3Bcom.dicoding.mytest.event.eventmaps
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.dicoding.mytest.event.eventmaps
+
+    SHA-1 certificate fingerprint:
+    F2:91:CF:8F:3B:8E:5D:BD:2E:31:B0:FD:70:EE:1C:FB:35:FB:1B:46
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCGnO0H2HWih04lcRjI3zJGidb7lvKdvq8</string>
+</resources>

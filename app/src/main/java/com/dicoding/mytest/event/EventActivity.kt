@@ -3,11 +3,15 @@ package com.dicoding.mytest.event
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.mytest.DetailActivity
 import com.dicoding.mytest.R
 import com.dicoding.mytest.databinding.ActivityEventBinding
+import com.dicoding.mytest.event.eventmaps.EventFragment
 
 class EventActivity : AppCompatActivity() {
 
@@ -24,14 +28,41 @@ class EventActivity : AppCompatActivity() {
         binding = ActivityEventBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.rvEvent.setHasFixedSize(true)
 
+        binding.rvEvent.setHasFixedSize(true)
+        val actionBar = supportActionBar
         supportActionBar?.title = "EVENT"
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        actionBar?.setDisplayShowHomeEnabled(true)
+        actionBar?.setHomeAsUpIndicator(R.drawable.btn_back_normal)
 
         list.addAll(getListEvent())
         showRecyclerList()
 
+    }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.nav_menu, menu)
+        return true
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+                R.id.event_map -> {
+                    binding.rvEvent.visibility = View.INVISIBLE
+                    val fragment = EventFragment()
+                    supportFragmentManager.beginTransaction().apply {
+                        add(R.id.frame_containter, fragment)
+                        commit()
+                    }
+                }
+            }
+        return super.onOptionsItemSelected(item)
     }
 
     //menampilkan list view dan intent tanpa menghapus data yang ada di activity sebelumnya

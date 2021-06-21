@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dicoding.mytest.databinding.ItemEventBinding
 
-class EventAdapter(private val listEvent: ArrayList<EventEntity>) : RecyclerView.Adapter<EventAdapter.EventViewHolder>(){
+class EventAdapter(private val listEvent: List<EventEntity>) : RecyclerView.Adapter<EventAdapter.EventViewHolder>(){
     private var onItemClickCallback: OnItemClickCallback? = null
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
